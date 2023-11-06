@@ -1,0 +1,102 @@
+:root {
+  --Dark_slate_grey: hsl(234, 29%, 20%);
+  --Charcoal_grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --Tomato: hsl(4, 100%, 67%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: var(--Charcoal_grey);
+  list-style: none;
+}
+@font-face {
+  font-family: "regular";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "bold";
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+body {
+  background-color: var(--Dark_slate_grey);
+  font-family: "robot_regular";
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+main {
+  background-color: var(--White);
+  position: relative;
+  overflow: hidden;
+  max-width: 1040px;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  height: 50vh;
+}
+
+/*Right*/
+.rightImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*Left*/
+.left {
+  padding: 20px;
+}
+.left h1 {
+  font-family: bold;
+  font-size: 40px;
+  padding: 10px 0px;
+}
+.left p {
+  font-family: regular;
+}
+.list {
+  margin-top: 20px;
+}
+.list li {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.list p {
+  margin-left: 5px;
+  font-size: 13px;
+}
+.form {
+  margin-top: 20px;
+}
+.form label {
+  font-family: bold;
+}
+.form input {
+  margin-top: 20px;
+  outline: none;
+  padding: 5px 15px;
+  width: 70%;
+  border: 1px solid var(--Grey);
+  border-radius: 5px;
+}
+button {
+  padding: 10px 15px;
+  width: 70%;
+  background-color: var(--Dark_slate_grey);
+  border: 1px solid var(--Dark_slate_grey);
+  color: white;
+  font-family: regular;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
