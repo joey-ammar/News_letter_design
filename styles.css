@@ -100,3 +100,20 @@ button {
   margin-top: 10px;
   text-align: center;
 }
+
+.after {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1040px !important;
+  height: 50vh;
+  padding: 10rem;
+}
+.after h1 {
+  font-family: bold;
+  color: green;
+}
+.after button {
+  cursor: pointer;
+}
